@@ -101,10 +101,11 @@ DeviceNetworkEvents
 
 ### 1. File Download - TOR Installer
 
-- **Timestamp:** `2024-11-08T22:14:48.6065231Z`
-- **Event:** The user "employee" downloaded a file named `tor-browser-windows-x86_64-portable-14.0.1.exe` to the Downloads folder.
-- **Action:** File download detected.
-- **File Path:** `C:\Users\employee\Downloads\tor-browser-windows-x86_64-portable-14.0.1.exe`
+- **Timestamp:** `2025-11-13T19:03:00Z`
+- **Event:** TOR Browser installer downloaded in the Downloads folder to the workstation by the user "she114"
+- **Action:** ProcessCreated
+- **Process:** `tor-browser-windows-x86_64-portable-15.0.1.exe`
+- **File Path:** `C:\Users\she114\Downloads\tor-browser-windows-x86_64-portable-15.0.1.exe`
 
 ### 2. Process Execution - TOR Browser Installation
 
@@ -151,7 +152,6 @@ DeviceNetworkEvents
 Between 11:03 AM and 11:07 AM on Nov 13, 2025, user she114 downloaded, silently installed, launched, and successfully used the TOR Browser on device threathntv-sh. The installer was executed using a silent mode switch, resulting in background installation. TOR-related files were placed on the desktop, and multiple TOR processes (firefox.exe, tor.exe) executed afterward.
 At 11:06:28 AM, the system established an outbound connection to a known TOR relay (port 9001), proving active TOR network usage. Later that evening, additional TOR-related file activity occurred, including the creation of a text file `tor-shopping-list.txt`.
 The activity clearly demonstrates intentional installation and use of the TOR Browser by user she114.
-
 
 ---
 
