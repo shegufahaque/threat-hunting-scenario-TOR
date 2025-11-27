@@ -40,7 +40,7 @@ DeviceFileEvents
 | order by Timestamp desc  
 | project Timestamp, DeviceName, ActionType, FileName, FolderPath, SHA256, Account = InitiatingProcessAccountName
 ```
-<img width="1212" alt="image" src="https://github.com/user-attachments/assets/71402e84-8767-44f8-908c-1805be31122d">
+<img width="1396" height="542" alt="image" src="https://github.com/user-attachments/assets/72ac31a0-fb21-4b12-9689-92fa254d3708" />
 
 ---
 
@@ -57,7 +57,7 @@ DeviceProcessEvents
 | where ProcessCommandLine contains "tor-browser-windows-x86_64-portable-14.0.1.exe"  
 | project Timestamp, DeviceName, AccountName, ActionType, FileName, FolderPath, SHA256, ProcessCommandLine
 ```
-<img width="1212" alt="image" src="https://github.com/user-attachments/assets/b07ac4b4-9cb3-4834-8fac-9f5f29709d78">
+<img width="1391" height="156" alt="image" src="https://github.com/user-attachments/assets/f6fc58ca-4cd5-41f9-add3-85405679b959" />
 
 ---
 
@@ -74,7 +74,7 @@ DeviceProcessEvents
 | project Timestamp, DeviceName, AccountName, ActionType, FileName, FolderPath, SHA256, ProcessCommandLine  
 | order by Timestamp desc
 ```
-<img width="1212" alt="image" src="https://github.com/user-attachments/assets/b13707ae-8c2d-4081-a381-2b521d3a0d8f">
+<img width="1400" height="510" alt="image" src="https://github.com/user-attachments/assets/802821d7-8365-4656-bf80-df18d161a2f8" />
 
 ---
 
@@ -93,7 +93,7 @@ DeviceNetworkEvents
 | project Timestamp, DeviceName, InitiatingProcessAccountName, ActionType, RemoteIP, RemotePort, RemoteUrl, InitiatingProcessFileName, InitiatingProcessFolderPath  
 | order by Timestamp desc
 ```
-<img width="1212" alt="image" src="https://github.com/user-attachments/assets/87a02b5b-7d12-4f53-9255-f5e750d0e3cb">
+<img width="1415" height="510" alt="image" src="https://github.com/user-attachments/assets/d818a436-dc04-47ad-97f8-1b6c467abff5" />
 
 ---
 
@@ -148,12 +148,15 @@ DeviceNetworkEvents
 
 ## Summary
 
-The user "employee" on the "threat-hunt-lab" device initiated and completed the installation of the TOR browser. They proceeded to launch the browser, establish connections within the TOR network, and created various files related to TOR on their desktop, including a file named `tor-shopping-list.txt`. This sequence of activities indicates that the user actively installed, configured, and used the TOR browser, likely for anonymous browsing purposes, with possible documentation in the form of the "shopping list" file.
+Between 11:03 AM and 11:07 AM on Nov 13, 2025, user she114 downloaded, silently installed, launched, and successfully used the TOR Browser on device threathntv-sh. The installer was executed using a silent mode switch, resulting in background installation. TOR-related files were placed on the desktop, and multiple TOR processes (firefox.exe, tor.exe) executed afterward.
+At 11:06:28 AM, the system established an outbound connection to a known TOR relay (port 9001), proving active TOR network usage. Later that evening, additional TOR-related file activity occurred, including the creation of a text file `tor-shopping-list.txt`.
+The activity clearly demonstrates intentional installation and use of the TOR Browser by user she114.
+
 
 ---
 
 ## Response Taken
 
-TOR usage was confirmed on the endpoint `threat-hunt-lab` by the user `employee`. The device was isolated, and the user's direct manager was notified.
+TOR usage was confirmed on endpoint threatHntV-SH by the user she114. The device was isolated, and the user's direct manager was notified.
 
 ---
