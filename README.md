@@ -1,4 +1,4 @@
-# Threat Hunt Project: Unauthorized TOR Browser Usage
+# Threat Hunt Project: Detected Unauthorized TOR Browser Usage
 
 <img width="771" height="379" alt="image" src="https://github.com/user-attachments/assets/f759c11f-e9b4-4448-9f03-edc7496c94c1" />
 
